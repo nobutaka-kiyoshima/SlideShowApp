@@ -21,8 +21,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VGa-Ub-WEe">
                                 <rect key="frame" x="54" y="78" width="212" height="432"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36W-el-gVG">
-                                <rect key="frame" x="59.5" y="325" width="41" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36W-el-gVG">
+                                <rect key="frame" x="60" y="325" width="41" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="進む">
@@ -32,8 +32,8 @@
                                     <action selector="GoForward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebv-Y4-1gf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDM-le-KiB">
-                                <rect key="frame" x="219.5" y="324" width="41" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDM-le-KiB">
+                                <rect key="frame" x="220" y="324" width="41" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="再生">
@@ -43,8 +43,8 @@
                                     <action selector="PlayStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eg9-aO-1JV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-T4-Mcv">
-                                <rect key="frame" x="139.5" y="324" width="41" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZ3-T4-Mcv">
+                                <rect key="frame" x="140" y="324" width="41" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="戻る">
@@ -57,10 +57,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FZ3-T4-Mcv" firstAttribute="leading" secondItem="36W-el-gVG" secondAttribute="trailing" constant="39" id="EYq-Gf-olx"/>
+                            <constraint firstItem="aDM-le-KiB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="304" id="40R-aE-Tuj"/>
+                            <constraint firstAttribute="trailing" secondItem="aDM-le-KiB" secondAttribute="trailing" constant="59" id="E3x-gp-oVA"/>
+                            <constraint firstItem="aDM-le-KiB" firstAttribute="top" secondItem="FZ3-T4-Mcv" secondAttribute="top" id="EF4-Ib-l1X"/>
+                            <constraint firstItem="FZ3-T4-Mcv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="36W-el-gVG" secondAttribute="trailing" symbolic="YES" id="EYq-Gf-olx"/>
+                            <constraint firstItem="aDM-le-KiB" firstAttribute="centerY" secondItem="FZ3-T4-Mcv" secondAttribute="centerY" id="RT9-PU-qRV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VGa-Ub-WEe" secondAttribute="bottom" constant="58" id="UsR-je-LfW"/>
+                            <constraint firstItem="aDM-le-KiB" firstAttribute="bottom" secondItem="36W-el-gVG" secondAttribute="bottom" id="ZUc-EV-Znc"/>
+                            <constraint firstItem="36W-el-gVG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="kt2-Q2-I3p"/>
                             <constraint firstItem="FZ3-T4-Mcv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2F-7y-V5j"/>
-                            <constraint firstItem="aDM-le-KiB" firstAttribute="leading" secondItem="FZ3-T4-Mcv" secondAttribute="trailing" constant="39" id="nOR-PN-30B"/>
+                            <constraint firstItem="aDM-le-KiB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FZ3-T4-Mcv" secondAttribute="trailing" symbolic="YES" id="nOR-PN-30B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VGa-Ub-WEe" secondAttribute="trailing" constant="54" id="nnz-JI-dmn"/>
                             <constraint firstItem="VGa-Ub-WEe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="ove-lY-j9M"/>
                             <constraint firstItem="VGa-Ub-WEe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="sen-hb-HP3"/>
